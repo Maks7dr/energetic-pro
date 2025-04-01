@@ -1,17 +1,14 @@
-const slides = document.querySelector(".slides");
-const images = document.querySelectorAll(".slides img");
-let index = 0;
-
-document.getElementById("next").addEventListener("click", () => {
-  index = (index + 1) % images.length;
-  updateSlider();
+var swiper = new Swiper(".swiper-container", {
+  loop: true,
+  slidesPerView: 2,
+  spaceBetween: 10,
+  slidesPerGroup: 1,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 });
-
-document.getElementById("prev").addEventListener("click", () => {
-  index = (index - 1 + images.length) % images.length;
-  updateSlider();
-});
-
-function updateSlider() {
-  slides.style.transform = `translateX(-${index * 100}%)`;
-}
