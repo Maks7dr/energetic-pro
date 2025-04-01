@@ -104,3 +104,16 @@ h3 {
   object-fit: cover;
   border-radius: 10px;
 }
+.training-container {
+  display: flex;
+  gap: 20px;
+}
+.training-box {
+  max-width: 320px;
+}
+.training-video {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 10px 10px 10px rgba(220, 212, 43, 0.5);
+  border: 2px solid rgb(220 212 43);
+}
