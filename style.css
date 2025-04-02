@@ -36,6 +36,7 @@ footer {
 }
 ul {
   list-style: none;
+  padding: 0;
 }
 .container {
   max-width: 375px;
@@ -145,4 +146,9 @@ h3 {
   overflow: hidden;
   box-shadow: 10px 10px 10px rgba(220, 212, 43, 0.5);
   border: 2px solid rgb(220 212 43);
+}
+
+.contact-tel {
+  text-decoration: none;
+  display: block;
 }
