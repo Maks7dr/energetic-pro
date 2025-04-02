@@ -38,10 +38,17 @@ ul {
   list-style: none;
 }
 .container {
-  max-width: 1200px;
+  max-width: 375px;
   margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 1200px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 .project-img {
   overflow: hidden;
@@ -50,6 +57,11 @@ ul {
   box-shadow: 10px 10px 10px rgba(220, 212, 43, 0.5);
   border: 2px solid rgb(220 212 43);
 }
+@media only screen and (min-width: 768px) {
+  .project-img {
+    width: 700px;
+  }
+}
 .energetik-pro-list {
   display: flex;
   flex-direction: column;
@@ -57,8 +69,14 @@ ul {
 }
 .energetik-pro-item {
   display: flex;
+  flex-direction: column;
   gap: 20px;
   align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  .energetik-pro-item {
+    flex-direction: row;
+  }
 }
 .energetik-pro-item:first-child {
   margin-bottom: 40px;
@@ -67,7 +85,7 @@ ul {
   max-width: 320px;
 }
 .energetik-pro-img {
-  max-width: 320px;
+  max-width: 315px;
 
   object-fit: cover;
   overflow: hidden;
@@ -81,6 +99,11 @@ ul {
   border-radius: 10px;
   box-shadow: 10px 10px 10px rgba(220, 212, 43, 0.5);
   border: 2px solid rgb(220 212 43);
+}
+@media only screen and (min-width: 768px) {
+  .mobilograf-img {
+    width: 700px;
+  }
 }
 .energetik-pro-box {
   display: flex;
@@ -106,7 +129,13 @@ h3 {
 }
 .training-container {
   display: flex;
+  flex-direction: column;
   gap: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .training-container {
+    flex-direction: row;
+  }
 }
 .training-box {
   max-width: 320px;
